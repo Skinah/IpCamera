@@ -628,7 +628,7 @@ BabyCamZoom.sendCommand(0)
 
 Any camera with a RTSP feed can use FFmpeg to create either a ``ffmpegMotionAlarm`` or ``audioAlarm``.
 Even if your camera has a motion alarm, you may find that it does not provide enough flexibility to ignore moving trees, or have its sensitivity adjusted on the fly to reduce its sensitivity during rain. 
-This is where this feature can come in handy as you can even add your own FFmpeg arguments (options) to use the Crop or any other ffmpeg filter as this wont effect the video feeds you watch.
+This is where this feature can come in handy as you can even add your own FFmpeg arguments (options) to use the Crop or any other ffmpeg filter, as this wont effect the video feeds you watch.
 <https://ffmpeg.org/ffmpeg-filters.html#Examples-52>
 
 
@@ -643,7 +643,8 @@ To get this working:
 
 **audioAlarm**
 
-This works in much the same way, just with different channels. If you setup a lower resolution url in the config ``FFMPEG_MOTION_INPUT`` you need to ensure it contains audio otherwise this feature wont work.
+This works in much the same way, just with different channels. 
+If you setup a lower resolution url in the config ``FFMPEG_MOTION_INPUT`` you need to ensure it contains audio otherwise this feature wont work.
 
 
 ## Image / Snapshots
@@ -654,9 +655,9 @@ There are multiple advantages to using these methods from the binding instead of
 **Ways to use snapshots are:**
 
 + Use the cameras URL so it passes from the camera to your end device ie a tablet, without passing any data through the openHAB server. This is always the best option if it works.
-+ Request a snapshot with the url ``http://192.168.xxx.xxx:54321/ipcamera.jpg``. The IP is for your Openhab server not the camera, and 54321 is the SERVER_PORT number that you specified in the bindings setup. This will return the current snapshot without needing to wait for the camera to create and send a snapshot. If you find the snapshot is old you can set the gif preroll to a number above 0 and this forces the camera to keep updating the stored jpg in ram.
++ Request a snapshot with the url ``http://192.168.xxx.xxx:54321/ipcamera.jpg``. The IP is for your Openhab server not the camera, and 54321 is the SERVER_PORT number that you specified in the bindings setup. If you find the snapshot is old you can set the gif preroll to a number above 0 and this forces the camera to keep updating the stored jpg in ram.
 This file does not exist on disk and is served out of ram to keep disk writes to a minimum with this binding. 
-This means the binding can serve a jpg file much faster than a camera can directly as a camera usually waits for a keyframe, then has to compress the data, before it can finally be sent. 
+The binding can serve a jpg file much faster than a camera can directly, as a camera waits for a keyframe, then has to compress the data, before it can finally be sent.
 All of this takes time giving you a delay compared to serving the file from Ram and can make a sitemap or habpanel UI feel slow to respond if the pictures take time to appear.
 The ipcamera.jpg can also be cast, as most cameras can not cast their snapshots without using the binding.
 + Use the ``http://192.168.xxx.xxx:54321/snapshots.mjpeg`` to request a stream of snapshots to be delivered in mjpeg format. 
@@ -823,7 +824,7 @@ Video url="http://192.168.0.32:54321/snapshots.mjpeg" encoding="mjpeg"
 ## HLS (HTTP Live Streaming)
 
 HLS is a way of splitting the live stream up into small h264 based files so it can be played in many browsers without using much CPU power and it can also contain audio. 
-Because the files need to be created and are not streamed live, this creates a lag/delay behind realtime that can be lowered (more on that below). 
+Because the files need to be created and are not streamed live, this creates a lag/delay behind real time that can be lowered (more on that below). 
 
 The channel called 'startStream' can be used to create HLS non stop and remove the startup delay that comes with using this type of stream. 
 The startup delay and the lag are two different things with the startup delay easily solved by turning this switch ON.
@@ -868,26 +869,26 @@ tmpfs /tmpfs tmpfs defaults,nosuid,nodev,noatime,size=20m 0 0
 
 Please get the default settings working first before playing with the advanced settings.
 
-To get audio working you need to have the camera include audio in the stream and in a format that is supported by Chromecast or your browser, I suggest using ``AAC`` as MP3 is not supported by Google/Nest. 
+To get audio working you need to have the camera include audio in the stream and in a format that is supported by Chromecast or your browser, I suggest using ``AAC`` as MP3 is not supported by Google/Nest.
 Then you need to change the HLS settings to what you need, some are suggestions below.
 
 
 
-Less delay behind realtime (no audio) if your cameras iFrames are 1 second apart:
+Less delay behind realtime (no audio) if your cameras iFrames are 1 second apart (-hls_time 1):
 
 ```bash
 -strict -2 -f lavfi -i aevalsrc=0 -acodec aac -vcodec copy -hls_flags delete_segments -hls_time 1 -hls_list_size 4
 ```
 
 
-For cameras with no audio in the stream (default setting) and it must be a supported format like AAC.
+For cameras with no audio in the stream (default setting).
 
 ```bash
 -strict -2 -f lavfi -i aevalsrc=0 -acodec aac -vcodec copy -hls_flags delete_segments -hls_time 2 -hls_list_size 4
 ```
 
 
-For cameras with audio in the stream. Note will break Chromecast if the camera does not send audio which is why this is not the default.
+For cameras with audio in the stream. Note: will break Chromecast if the camera does not send audio which is why this is not the default.
 
 ```bash
 -strict -2 -acodec aac -vcodec copy -hls_flags delete_segments -hls_time 2 -hls_list_size 4
@@ -952,12 +953,14 @@ Webview url="http://192.168.6.4:8080/static/html/file.html" height=5
 ## How to cast with HLS
 
 There are two ways to cast a camera.
-1. Asking Google to show X camera after you have tagged the metadata shown below. Must be HLS.
-2. Using the Chromecast Binding and sending the url to the playuri channel. You can cast the jpg (static picture), gif (looping moving picture) and HLS for a non stop stream that uses low CPU and can also contain audio.
+
+1. Asking Google to "show X camera" after you have tagged the metadata shown below. Must be HLS.
+2. Using the Chromecast Binding and sending the url to the `playuri` channel. You can cast the ipcamera.jpg (static picture), ipcamera.gif (looping moving picture) and HLS for a non stop stream that uses low CPU and can also contain audio.
 
 After reading the information in the above sections to setup HLS, you can ask Google to 'Show the Front Door Camera' with the recently added metadata for the Openhab Cloud Connector.
  
-Don't forget to ask google to 'sync my devices' after adding the metadata shown below. You can also ask for any of the synonyms that you tag to ensure Google understands multiple names that the camera may be called.
+Don't forget to ask google to 'sync my devices' after adding the metadata shown below. 
+You can also ask for any of the synonyms that you tag to ensure Google understands multiple names that the camera may be called by different people in your family.
 
 Example of how this is done in your items file.
 
@@ -1280,7 +1283,8 @@ You can specify the item name in the filter to remove just 1 camera, or you can 
 
 ## Roadmap for further development
 
-Currently the focus is on creating a stable framework that allows all brands to be used in a consistent way, new features that most users wont use are not held as highly as having a stable binding. After the binding is merged the extra features can be added over time.
+Currently the focus is on creating a stable framework that allows all brands to be used in a consistent way, new features that most users wont use are not held as highly as having a stable binding. 
+After the binding is merged, the extra features can be added over time.
 
 If you need a feature added that is in an API and you can not program, please raise an issue ticket at Github with a sample of what a browser shows when you enter in the URL, it is usually very quick to add features if someone gives a summary of the URL and what their camera returns.
 
@@ -1294,12 +1298,9 @@ Any feedback, push requests and ideas are welcome, just please create a Github i
 Areas the binding could be improved are:
 
 + Fixing any text that may be confusing in log output or in the User Interfaces.
-
-+ Automate the fetching of names for ONVIF presets.O
++ Automate the fetching of names for ONVIF presets.
 + 1 and 2 way audio. Keen to add this at some point for talking with people at my front door and baby monitor uses. Most likely only a few select brands of camera that have an API for doing this will get the ability.
-
 + Any of the API methods not implemented.
-
 + Any of the Onvif methods not implemented.
 
 
