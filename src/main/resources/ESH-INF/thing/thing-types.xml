@@ -101,22 +101,22 @@
 		<channels>
 		<channel id="startStream" typeId="startStream"/>
 		<channel id="updateImageNow" typeId="updateImageNow"/>
-		<channel id="image" typeId="image"/>        				
+		<channel id="image" typeId="image"/>				
 		<channel id="updateGif" typeId="updateGif"/>
 		<channel id="gifFilename" typeId="gifFilename"/>
 		<channel id="gifHistory" typeId="gifHistory"/>
 		<channel id="gifHistoryLength" typeId="gifHistoryLength"/>		
 		<channel id="recordMp4" typeId="recordMp4"/>
 		<channel id="mp4Preroll" typeId="mp4Preroll"/>
-        <channel id="mp4Filename" typeId="mp4Filename"/>        
-        <channel id="mp4History" typeId="mp4History"/>
-        <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
-        <channel id="lastMotionType" typeId="lastMotionType"/>				
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="lastMotionType" typeId="lastMotionType"/>				
 		<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 		<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>
 		<channel id="externalMotion" typeId="externalMotion"/>				
-        <channel id="thresholdAudioAlarm" typeId="thresholdAudioAlarm"/>
-        <channel id="audioAlarm" typeId="audioAlarm"/>                 
+<channel id="thresholdAudioAlarm" typeId="thresholdAudioAlarm"/>
+<channel id="audioAlarm" typeId="audioAlarm"/> 
 		<channel id="streamUrl" typeId="streamUrl"/>
 		<channel id="rtspUrl" typeId="rtspUrl"/>
 		<channel id="imageUrl" typeId="imageUrl"/>
@@ -349,36 +349,36 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		<channels>
 		<channel id="startStream" typeId="startStream"/>
 		<channel id="updateImageNow" typeId="updateImageNow"/>
-		<channel id="image" typeId="image"/>        		
+		<channel id="image" typeId="image"/>		
 		<channel id="updateGif" typeId="updateGif"/>		
 		<channel id="gifFilename" typeId="gifFilename"/>
-        <channel id="gifHistory" typeId="gifHistory"/>
-        <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistory" typeId="gifHistory"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 		<channel id="recordMp4" typeId="recordMp4"/>
 		<channel id="mp4Preroll" typeId="mp4Preroll"/>
-        <channel id="mp4Filename" typeId="mp4Filename"/>
-        <channel id="mp4History" typeId="mp4History"/>
-        <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
-        <channel id="lastMotionType" typeId="lastMotionType"/>	
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="lastMotionType" typeId="lastMotionType"/>	
 		<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 		<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>
 		<channel id="thresholdAudioAlarm" typeId="thresholdAudioAlarm"/>
-        <channel id="audioAlarm" typeId="audioAlarm"/>
+<channel id="audioAlarm" typeId="audioAlarm"/>
 		<channel id="externalMotion" typeId="externalMotion"/>
-        <channel id="motionAlarm" typeId="motionAlarm"/>
-        <channel id="cellMotionAlarm" typeId="cellMotionAlarm"/>
-        <channel id="lineCrossingAlarm" typeId="lineCrossingAlarm"/>
-        <channel id="fieldDetectionAlarm" typeId="fieldDetectionAlarm"/>
-        <channel id="faceDetected" typeId="faceDetected"/>
-        <channel id="parkingAlarm" typeId="parkingAlarm"/>
-        <channel id="itemLeft" typeId="itemLeft"/> 
-        <channel id="itemTaken" typeId="itemTaken"/>   
-        <channel id="tamperAlarm" typeId="tamperAlarm"/>
-        <channel id="tooDarkAlarm" typeId="tooDarkAlarm"/>
-        <channel id="storageAlarm" typeId="storageAlarm"/>
-        <channel id="sceneChangeAlarm" typeId="sceneChangeAlarm"/>
-        <channel id="tooBrightAlarm" typeId="tooBrightAlarm"/>
-        <channel id="tooBlurryAlarm" typeId="tooBlurryAlarm"/>   
+<channel id="motionAlarm" typeId="motionAlarm"/>
+<channel id="cellMotionAlarm" typeId="cellMotionAlarm"/>
+<channel id="lineCrossingAlarm" typeId="lineCrossingAlarm"/>
+<channel id="fieldDetectionAlarm" typeId="fieldDetectionAlarm"/>
+<channel id="faceDetected" typeId="faceDetected"/>
+<channel id="parkingAlarm" typeId="parkingAlarm"/>
+<channel id="itemLeft" typeId="itemLeft"/> 
+<channel id="itemTaken" typeId="itemTaken"/>   
+<channel id="tamperAlarm" typeId="tamperAlarm"/>
+<channel id="tooDarkAlarm" typeId="tooDarkAlarm"/>
+<channel id="storageAlarm" typeId="storageAlarm"/>
+<channel id="sceneChangeAlarm" typeId="sceneChangeAlarm"/>
+<channel id="tooBrightAlarm" typeId="tooBrightAlarm"/>
+<channel id="tooBlurryAlarm" typeId="tooBlurryAlarm"/>   
 		<channel id="pan" typeId="pan"/>
 		<channel id="tilt" typeId="tilt"/>
 		<channel id="zoom" typeId="zoom"/>
@@ -620,15 +620,15 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 			<channel id="updateGif" typeId="updateGif"/>
 			<channel id="gifFilename" typeId="gifFilename"/>
 			<channel id="gifHistory" typeId="gifHistory"/>
-            <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 			<channel id="recordMp4" typeId="recordMp4"/>
 			<channel id="mp4Preroll" typeId="mp4Preroll"/>
-            <channel id="mp4Filename" typeId="mp4Filename"/>
-            <channel id="mp4History" typeId="mp4History"/>
-            <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
-            <channel id="lastMotionType" typeId="lastMotionType"/>
-            <channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
-            <channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>					
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="lastMotionType" typeId="lastMotionType"/>
+<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
+<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>					
 			<channel id="enableMotionAlarm" typeId="enableMotionAlarm"/>
 			<channel id="motionAlarm" typeId="motionAlarm"/>
 			<channel id="externalMotion" typeId="externalMotion"/>			
@@ -887,12 +887,12 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 			<channel id="updateGif" typeId="updateGif"/>
 			<channel id="gifFilename" typeId="gifFilename"/>
 			<channel id="gifHistory" typeId="gifHistory"/>
-            <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 			<channel id="recordMp4" typeId="recordMp4"/>
 			<channel id="mp4Preroll" typeId="mp4Preroll"/>
-            <channel id="mp4Filename" typeId="mp4Filename"/>
-            <channel id="mp4History" typeId="mp4History"/>
-            <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>			
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>			
 			<channel id="lastMotionType" typeId="lastMotionType"/>
 			<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 			<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>			
@@ -1168,12 +1168,12 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 			<channel id="updateGif" typeId="updateGif"/>
 			<channel id="gifFilename" typeId="gifFilename"/>
 			<channel id="gifHistory" typeId="gifHistory"/>
-            <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 			<channel id="recordMp4" typeId="recordMp4"/>
 			<channel id="mp4Preroll" typeId="mp4Preroll"/>
-            <channel id="mp4Filename" typeId="mp4Filename"/>
-            <channel id="mp4History" typeId="mp4History"/>
-            <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
 			<channel id="lastMotionType" typeId="lastMotionType"/>
 			<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 			<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>
@@ -1421,13 +1421,13 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		<channel id="updateGif" typeId="updateGif"/>
 		<channel id="gifFilename" typeId="gifFilename"/>
 		<channel id="gifHistory" typeId="gifHistory"/>
-        <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 		<channel id="recordMp4" typeId="recordMp4"/>
 		<channel id="mp4Preroll" typeId="mp4Preroll"/>
-        <channel id="mp4Filename" typeId="mp4Filename"/>
-        <channel id="mp4History" typeId="mp4History"/>
-        <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
-        <channel id="lastMotionType" typeId="lastMotionType"/>		
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="lastMotionType" typeId="lastMotionType"/>		
 		<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 		<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>
 		<channel id="enableMotionAlarm" typeId="enableMotionAlarm"/>
@@ -1695,12 +1695,12 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 			<channel id="updateGif" typeId="updateGif"/>
 			<channel id="gifFilename" typeId="gifFilename"/>
 			<channel id="gifHistory" typeId="gifHistory"/>
-            <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 			<channel id="recordMp4" typeId="recordMp4"/>
 			<channel id="mp4Preroll" typeId="mp4Preroll"/>
-            <channel id="mp4Filename" typeId="mp4Filename"/>
-            <channel id="mp4History" typeId="mp4History"/>
-            <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
 			<channel id="lastMotionType" typeId="lastMotionType"/>
 			<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 			<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>			
@@ -1968,19 +1968,19 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		<label>"INSTAR" HD IP camera with ONVIF and API support.</label>
 		<description>Use for all current INSTAR HD Cameras, as they support an API as well as ONVIF.</description>
 		<channels>
-		    <channel id="startStream" typeId="startStream"/>
+		<channel id="startStream" typeId="startStream"/>
 			<channel id="updateImageNow" typeId="updateImageNow"/>
 			<channel id="image" typeId="image"/>
 			<channel id="updateGif" typeId="updateGif"/>
 			<channel id="gifFilename" typeId="gifFilename"/>
 			<channel id="gifHistory" typeId="gifHistory"/>
-            <channel id="gifHistoryLength" typeId="gifHistoryLength"/>
+<channel id="gifHistoryLength" typeId="gifHistoryLength"/>
 			<channel id="recordMp4" typeId="recordMp4"/>
 			<channel id="mp4Preroll" typeId="mp4Preroll"/>
-            <channel id="mp4Filename" typeId="mp4Filename"/>
-            <channel id="mp4History" typeId="mp4History"/>
-            <channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
-            <channel id="lastMotionType" typeId="lastMotionType"/>			
+<channel id="mp4Filename" typeId="mp4Filename"/>
+<channel id="mp4History" typeId="mp4History"/>
+<channel id="mp4HistoryLength" typeId="mp4HistoryLength"/>
+<channel id="lastMotionType" typeId="lastMotionType"/>			
 			<channel id="ffmpegMotionControl" typeId="ffmpegMotionControl"/>
 			<channel id="ffmpegMotionAlarm" typeId="ffmpegMotionAlarm"/>
 			<channel id="enableMotionAlarm" typeId="enableMotionAlarm"/>
@@ -2257,7 +2257,7 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 <label>Gif Filename History</label>
 <description>A history of the last gifs created in a CSV formatted string.</description>
 </channel-type>
-        
+
 <channel-type id="gifHistoryLength">
 <item-type>Number</item-type>
 <label>gifHistoryLength</label>
@@ -2284,7 +2284,7 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 <label>Mp4 Filename History</label>
 <description>A history of the last mp4 recordings created in a CSV formatted string.</description>
 </channel-type>
-        
+
 <channel-type id="mp4HistoryLength">
 <item-type>Number</item-type>
 <label>mp4HistoryLength</label>
@@ -2353,11 +2353,11 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		</channel-type>
 		
 		<channel-type id="lastMotionType">
-        <item-type>String</item-type>
-        <label>Last Motion Type</label>
-        <description>A string that contains the type of motion alarm that was last triggered.</description>
-        <state readOnly="true" />
-        </channel-type>
+<item-type>String</item-type>
+<label>Last Motion Type</label>
+<description>A string that contains the type of motion alarm that was last triggered.</description>
+<state readOnly="true" />
+</channel-type>
 		
 		<channel-type id="motionAlarm">
 		<item-type>Switch</item-type>
@@ -2389,12 +2389,12 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		</channel-type>
 				
 		<channel-type id="cellMotionAlarm">
-        <item-type>Switch</item-type>
-        <label>Cell Motion Detection Alarm</label>
-        <description>Cell based motion has been detected.</description>
-        <category>Motion</category>
-        <state readOnly="true" />
-        </channel-type>
+<item-type>Switch</item-type>
+<label>Cell Motion Detection Alarm</label>
+<description>Cell based motion has been detected.</description>
+<category>Motion</category>
+<state readOnly="true" />
+</channel-type>
 		
 		<channel-type id="pirAlarm">
 		<item-type>Switch</item-type>
@@ -2405,60 +2405,60 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		</channel-type>
 		
 		<channel-type id="tamperAlarm">
-        <item-type>Switch</item-type>
-        <label>Tamper Alarm</label>
-        <description>Camera may be stolen or damaged.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
-        
-        <channel-type id="tooDarkAlarm">
-        <item-type>Switch</item-type>
-        <label>Too Dark Alarm</label>
-        <description>Image is too dark.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
-        
-        <channel-type id="sceneChangeAlarm">
-        <item-type>Switch</item-type>
-        <label>Scene Change Alarm</label>
-        <description>Camera may have been moved.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
-        
-        <channel-type id="tooBrightAlarm">
-        <item-type>Switch</item-type>
-        <label>Too Bright Alarm</label>
-        <description>Image is too bright.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
-        
-        <channel-type id="tooBlurryAlarm">
-        <item-type>Switch</item-type>
-        <label>Too Blurry Alarm</label>
-        <description>Image is out of focus.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
-        
-        <channel-type id="storageAlarm">
-        <item-type>Switch</item-type>
-        <label>Storage Alarm</label>
-        <description>An issue with the cameras storage has been reported.</description>
-        <category>Alarm</category>
-        <state readOnly="true" />
-        </channel-type>
+<item-type>Switch</item-type>
+<label>Tamper Alarm</label>
+<description>Camera may be stolen or damaged.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
+
+<channel-type id="tooDarkAlarm">
+<item-type>Switch</item-type>
+<label>Too Dark Alarm</label>
+<description>Image is too dark.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
+
+<channel-type id="sceneChangeAlarm">
+<item-type>Switch</item-type>
+<label>Scene Change Alarm</label>
+<description>Camera may have been moved.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
+
+<channel-type id="tooBrightAlarm">
+<item-type>Switch</item-type>
+<label>Too Bright Alarm</label>
+<description>Image is too bright.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
+
+<channel-type id="tooBlurryAlarm">
+<item-type>Switch</item-type>
+<label>Too Blurry Alarm</label>
+<description>Image is out of focus.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
+
+<channel-type id="storageAlarm">
+<item-type>Switch</item-type>
+<label>Storage Alarm</label>
+<description>An issue with the cameras storage has been reported.</description>
+<category>Alarm</category>
+<state readOnly="true" />
+</channel-type>
 		
 		<channel-type id="ffmpegMotionAlarm">
-        <item-type>Switch</item-type>
-        <label>FFmpeg Motion Alarm</label>
-        <description>FFmpeg has detected motion.</description>
-        <category>Motion</category>
-        <state readOnly="true" />
-        </channel-type>
+<item-type>Switch</item-type>
+<label>FFmpeg Motion Alarm</label>
+<description>FFmpeg has detected motion.</description>
+<category>Motion</category>
+<state readOnly="true" />
+</channel-type>
 		
 		<channel-type id="lineCrossingAlarm">
 		<item-type>Switch</item-type>
@@ -2515,10 +2515,10 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		</channel-type>
 		
 		<channel-type id="triggerExternalAlarmInput">
-        <item-type>Switch</item-type>
-        <label>Alarm In 1 TRIGGER high ON/low OFF</label>
-        <description>Change the External Alarm Input to trigger on high or low states.</description>
-        </channel-type>
+<item-type>Switch</item-type>
+<label>Alarm In 1 TRIGGER high ON/low OFF</label>
+<description>Change the External Alarm Input to trigger on high or low states.</description>
+</channel-type>
 		
 		<channel-type id="externalAlarmInput">
 		<item-type>Switch</item-type>
@@ -2635,7 +2635,7 @@ The Image channel can be set to update in a number of ways. Recommend you set th
 		<item-type>String</item-type>
 		<label>API Access</label>
 		<description>Change the string to the correct URL format and the binding will send the GET request to the camera.</description>
-		</channel-type>       
+		</channel-type>   
 		
 <channel-type id="gotoPreset">
 <item-type>Number</item-type>
