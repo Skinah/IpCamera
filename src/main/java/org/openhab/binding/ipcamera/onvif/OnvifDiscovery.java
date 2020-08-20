@@ -147,7 +147,7 @@ public class OnvifDiscovery {
 
     void processCameraReplys() {
         for (DatagramPacket packet : listOfReplys) {
-            logger.trace(packet.toString());
+            logger.trace("Device replied to discovery with:{}", packet.toString());
             String xml = packet.content().toString(CharsetUtil.UTF_8);
             String xAddr = fetchXML(xml, "", "<d:XAddrs>");
             if (!xAddr.equals("")) {
